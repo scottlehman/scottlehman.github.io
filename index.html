@@ -5,92 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Scott Lehman's Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Michroma|Montserrat+Subrayada" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.min.js"></script> -->
+    <title>Scott Lehman Design</title>
 </head>
 
 <body>
-    <div id="name">
-        <p id="firstName">Scott</p>
-        <p id="lastName">Lehman</p>
+    <header>
+        <h1 class="headerName">Scott Lehman</h1>
+    </header>
 
+    <div class="aboutContainer container">
+
+        <div class="profilePicture"><img src="./assets/images/profilepic.jpg" alt="Profile Pic"></div>
+        <p class="aboutMePara">
+            <strong class="strong">Creativity is to an idea what a spark is to a fire.</strong> I try to be a spark to
+            light ideas afire. Based in Denver, CO I am an hard working and constantly inspired web developer.</p>
     </div>
-    <img src="./images/profilepic.jpg" alt="Profile Picture" srcset="">
-    <div id="aboutMe">
-        <p id="aboutMeP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sint aliquam voluptas neque
-            pariatur adipisci nemo dolorem voluptates accusantium eveniet! Alias fugiat asperiores minima est nostrum
-            quidem fuga assumenda amet!</p>
-    </div>
 
-    <div id="portTab">
-        <div id="portContain">
-            <a href="#" id="portBtn">
-                <p class="paraStyle">Portfolio</p>
-            </a>
+    <div class="portfolio container" id="portfolio-container">
 
-        </div>
+        <h1 class="contentName"><a href="#" id="portfolio-button" class="tab-button">Portfolio</a></h1>
 
+        <div class="portfolio-contents">
+            <!-- <div class="portfolio-scroll"> -->
+                <div class="port-item">
+                    <img src="./assets/images/Collegefinder.jpeg" alt="" class="portfolioPic">
 
-        <div id="portLinks">
-            <div class="containLink">
-                <img src="http://placehold.it/150x150" alt="placeholder image" class="pimg">
-                <a href="https://scottlehman.github.io/giphy-api/" target="#" class="links">
-                    <p>Giphy API calls</p>
-                </a>
-            </div>
-            <div class="containLink">
-                <img src="assets/images/quartzbackground.jpg" alt="placeholder image" class="pimg">
-                <a href="https://scottlehman.github.io/Crystal-Collector/" target="#" class="links">
-                    <p>Simple Math Game</p>
-                </a>
-            </div>
+                    <div class="portfolio-button">
+                        <a href="https://scottlehman.github.io/College-Finder/">College Finder</a><br>
+                        <a href="https://github.com/scottlehman/College-Finder">Github</a>
+                    </div>
 
-            <div class="containLink">
-                <img src="assets/images/train.jpg" alt="placeholder image" class="pimg">
-                <a href="https://scottlehman.github.io/Time-Spreadsheet/" target="#" class="links">
-                    <p>Firebase Data Persistence</p>
-                </a>
-            </div>
+                </div>
 
-            <div class="containLink">
-                <img src="assets/images/Logo.png" alt="placeholder image" class="pimg">
-                <a href="https://scottlehman.github.io/Trivia-Game/" target="#" class="links">
-                    <p>Trivia Game</p>
-                </a>
-            </div>
+                <div class="port-item">
+                    <img src="./assets/images/space-hangman game.jpg" alt="" class="portfolioPic">
+                    <div class="portfolio-button">
+                        <a href="https://scottlehman.github.io/Guess-Word-Game/">Javascript hangman</a><br>
+                        <a href="https://github.com/scottlehman/College-Finder">Github</a>
+                    </div>
+                </div>
 
-            <div class="containLink">
-                <img src="assets/images/astronaut.jpg" alt="placeholder image" class="pimg">
-                <a href="https://scottlehman.github.io/Guess-Word-Game/" target="#" class="links">
-                    <p>Word Guessing Game</p>
-                </a>
-            </div>
+                <div class="port-item">
+                    <img src="./assets/images/giphylogo.png" alt="">
+
+                    <div class="portfolio-button">
+                        <a href="https://scottlehman.github.io/giphy-api/">Giphy API search</a><br>
+                        <a href="https://github.com/scottlehman/giphy-api">Github</a>
+                    </div>
+                </div>
+            <!-- </div> -->
+
         </div>
 
     </div>
 
+    <div class="contact container" id="contact-container">
 
-    <div id="contactTab">
-        <div id="contactContain"><a href="#" id="contactBtn">
-                <p class="paraStyle">Information</p>
-            </a></div>
+        <h1 class="contentName"><a href="#" id="contact-button" class="tab-button">Contact</a></h1>
 
+        <div class="contact-contents">
+            <h4>Phone: <br>
+                <span><a href="+15172424985">517-242-4985</a></span>
+            </h4>
 
-        <div id="contactInfo">
-            <p>Phone: 517-242-4985</p>
-            <p>email: <a href="mailto:scottsgllehman@gmail.com">scottsgllehman@gmail.com</a></p>
-            <a href="https://www.linkedin.com/in/scott-lehman-117658175/" target="#" title="LinkedIn"><i class="fab fa-linkedin fa-6x"
-                    alt="LinkedIn"></i></a>
-            <a href="https://github.com/scottlehman" target="#" title="Github"><i class="fab fa-github fa-6x" alt="Github"></i></a>
-            <a href="" target="#" title="Resume"><i class="far fa-file-pdf fa-5x" id="pdfIcon"></i></a>
+            <h4>Email: <br>
+                <span class="email-link"><a href="mailto:scottsgllehman@gmail.com">scottsgllehman@gmail.com</a></span>
+            </h4>
 
+            <div class="socialMediaLinks">
+                <a href="https://www.linkedin.com/in/scott-lehman-117658175/" target="#" title="LinkedIn"><i class="fab fa-linkedin fa-6x"
+                        alt="LinkedIn"></i></a>
+                <a href="https://github.com/scottlehman" target="#" title="Github"><i class="fab fa-github fa-6x" alt="Github"></i></a>
+                <a href="/assets/images/scott-lehman-resume.rtf" download><i class="far fa-file-pdf fa-5x" id="pdfIcon"></i></a>
+            </div>
         </div>
 
+
     </div>
+
+
+
     <script src="assets/javascript/app.js"></script>
 </body>
 

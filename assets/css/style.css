@@ -1,315 +1,149 @@
-body {
-    background: rgb(57, 61, 60);
-    color: rgb(199, 200, 200);
+* {
+    box-sizing: border-box;
 }
 
-a
-a:hover
-a:visited
-a:link
-a:active {
-    height: 790px;
-    width: 70px;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    color: inherit;
-    background: inherit;
-    text-decoration: none;
+body {
+    margin: 0;
+    font-family: 'Michroma', sans-serif;
+    text-align: center;
+    line-height: 1.6em;
+    background: #232323;
+    color: #DDD;
+}
+
+.headerName {
+    margin: .5em;
+}
+
+
+.container {
+    max-width: 100%;
+}
+
+.portfolio {
+    width: 100vw;
+    height: 3rem;
+    background: rgb(0, 65, 52);
+    position: fixed;
+    bottom: 3rem;
+    overflow-y: auto;
     
 }
 
-#name {
-    position: relative;
-    top: 70px;
-    left: 350px;
-    width: 500px;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 5rem;
-    margin: 0;
-    padding: 0;  
+/* .portfolio-scroll {
+    overflow-y: scroll;
+    height: auto;
+} */
+
+.portfolio::-webkit-scrollbar {
+    display: none;
 }
 
-#firstName {
-    padding: 0;
-    margin: 0;
-    letter-spacing: 15px;
-}
-
-#lastName {
-    position: absolute;
-    padding: 0;
-    top: 60px;
-    margin: 0px 0px 0px 46px;
-    letter-spacing: 20px;
-    width: 900px;
-    border-bottom: solid rgb(199, 200, 200);
-}
-
-#modLastName {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    width: 48px;
-    height: 800px;
-    word-wrap: break-word;
-    text-align: center;
-}
-
-#aboutMe {
+.contact {
+    background: rgb(83, 131, 122);
+    width: 100vw;
+    height: 3rem;
     position: fixed;
-    font-family: 'Michroma', sans-serif;
-    font-size: 2rem;
-    top: 220px;
-    left: 356px;
-    margin: 0px 0px 0px 46px;
-    width: 900px;
+    bottom: 0;
 }
 
-#portTab {
-    display: flex;
-    position: absolute;
-    height: 858px;
+.contentName {
     margin: 0;
-    padding: 0px 0px 0px 8px;
-    width: 85px;
-    bottom: 0px;
-    right: 60px;
-    border-radius: 15px 0px 0px 15px;
-    background: rgb(0, 65, 52);
-    z-index: 1;
+    padding: .5rem 0;
+    letter-spacing: .5rem;
 }
 
-#portContain {
-    height: 800px;
-    width: 60px;
-    word-wrap: break-word;
-    font-family: 'Michroma', sans-serif;
-    letter-spacing: 20px;
-    font-size: 2.5rem;
-    font-weight: bolder;
-    padding: 0;
-    margin: 30px 0px 0px 0px;
+img {
+    max-width: 95%;
+    height: auto;
 }
 
-#contactContain {
-    height: 800px;
-    width: 60px;
-    word-wrap: break-word;
-    font-family: 'Michroma', sans-serif;
-    letter-spacing: 20px;
-    font-size: 2.5rem;
-    font-weight: bolder;
-    padding: 0;
-    margin: 50px 0px 0px 0px;
+.profilePicture {
+    max-width: 95%;
+    display: inline-block;
+}
+
+.port-item {
+    padding: 2rem 0;
+}
+
+.aboutMePara {
+    max-width: 95%;
+    display: inline-block;
+    letter-spacing: .1rem;
+}
+
+.strong {
+    color: turquoise;
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+    text-transform: uppercase;
+    color: turquoise;
 }
 
-.paraStyle {
-    text-align: center;
-    margin: 0;
-    padding: 0;
+.tab-button {
+    color: #DDD;
+    text-transform: none;
 }
 
-#contactTab {
-    display: flex;
-    background: rgb(83, 131, 122);
-    position: absolute;
-    height: 858px;
-    width: 70px;
-    margin: 0;
-    padding: 0px 0px 0px 8px;
-    border-radius: 15px 0px 0px 15px;
-    bottom: 0px;
-    right: 0px;
-    z-index: 3;
+.email-link {
+    font-size: .75rem;
 }
 
-#portLinks {
-    position: absolute;
-    top: 100px;
-    left: 225px;
-    width: 950px;
-    font-family: 'Michroma', sans-serif;
-    font-size: 1rem;
-    z-index: 4;
-}
+@media (min-width: 61rem) {
 
-#contactInfo {
-    position: absolute;
-    width: 950px;
-    top: 100px;
-    left: 350px;
-    font-family: 'Michroma', sans-serif;
-    font-size: 2rem;
-    z-index: 4;
+    .headerName {
+        font-size: 5em;
+    }
 
-}
+    .headerName {
+        border-bottom: solid .1rem #DDD;
+        padding: 2.5rem 0;
+        text-transform: uppercase;
+        margin: 1rem 1rem;
+    }
 
-#pdfIcon {
-    position: relative;
-    top: -10px
-}
-
-.containLink {
-    float: left;
-    position: relative;
-    height: 250px;
-    width: 150px;
-    margin: 20px 10px;
-}
-
-.links{
-    position: relative;
-    top: 150px;
-}
-
-.pimg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0 0;
-    height: 150px;
-    width: 150px;
-}
-
-/* MEDIA QUERYS BEGIN */
-
-@media (max-width: 450px) {
-    #nameMobile {
-        display: flex;
-        flex-direction: column;
+    .aboutMeContainer {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        font-size: 3rem;
-        border-bottom: solid 5px rgb(199, 200, 200);
-        font-family: 'Montserrat Subrayada', sans-serif;
     }
 
-    #firstNameMobile {
-        position: relative; 
-        text-align: center;
-        top: 0;
-        margin: 0;
-        padding: 0;
-       
-    }
-
-    #lastNameMobile {
+    .profilePicture {
         position: relative;
-        text-align: center;
-        top: 0;
-        border: none;
-        margin: 0;
-        padding: 0;
+        margin-left: 12%;
     }
 
-    #aboutMe {
-        position: relative;
-        width: 100%;
-        left: 0; 
-        margin: 0;
-
-    }
-
-    #aboutMeP {
-        word-wrap: break-word;
-        text-align: center;
-        font-size: 1rem;
-    }
-
-    #portTabMobile {
-        left: 0;
-        bottom: 5%;
-        width: 100%;
-        height: 5%;
-        padding:0;
-        border-radius: 0;
-        position: absolute;
-        margin: 0;
-        background: rgb(0, 65, 52);
-        z-index: 1;
-    } 
-
-    #portContainMobile {
-        position: relative;
-        height: auto;
-        width: 100%;
-        font-family: 'Michroma', sans-serif;
-        letter-spacing: 10px;
-        font-size: 1.5em;
-        font-weight: bolder;
-        padding: 0;
-        margin: 0;
-    }
-
-    #portLinksMobile {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding-left: 25%;
-        left: 0;
-    }
-
-    #contactTabMobile {
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 5%;
-        position: absolute;
-        font-family: 'Michroma', sans-serif;
-        font-size: 2rem;
-        z-index: 4;
-        background: rgb(83, 131, 122);
-    }
-
-    #contactContainMobile {
-        bottom: 0;
-        width: 100%;
-        height: auto;
-        font-family: 'Michroma', sans-serif;
-        letter-spacing: 10px;
-        font-size: 1.5rem;
-        font-weight: bolder;
-        padding: 0;
-        margin: 0;
-    }
-
-    #portP {
-        width: 100%;
-        font-size: 1rem;
-        word-wrap: none;
-        margin: 0;
-        padding: 0;
-
-    }
-
-    #portBtnMobile {
-        position: relative;
-        width: 100%;
-        bottom: 5%;
+    .aboutMePara {
+        max-width: 25%;
         height: 100%;
-        left: 0;
-        margin: 0;
-        padding: 0;
-     
+        position: relative;
+        font-size: 2em;
+        text-align: left;
+        line-height: 3rem;
+        letter-spacing: .1em;
+        float: right;
+        margin-right: 15%;
     }
 
-    #btnC {
-        width: 100%;
-        font-size: 1rem;
-        word-wrap: none;
-        margin: 0;
-        padding: 0;
+    .contentName {
+        padding: 1rem 0;
+        font-size: 3rem;
     }
+
+    .portfolio {
+        height: 5rem;
+        bottom: 5rem;
+    }
+
+    .contact {
+        height: 5rem;
+        bottom: 0;
+    }
+
+    .port-item {
+        max-width: 20em;
+        margin: 0 1rem;
+    }
+
 }
-
-
