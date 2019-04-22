@@ -30,6 +30,13 @@ body {
     
 }
 
+.portfolio-contents {
+    display: flex;
+    flex-direction: row;            
+    flex-wrap: nowrap;              
+    justify-content: space-between;
+}
+
 /* .portfolio-scroll {
     overflow-y: scroll;
     height: auto;
